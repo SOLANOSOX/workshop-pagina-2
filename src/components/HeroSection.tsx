@@ -58,18 +58,6 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Progress Bar - Lote Vendido */}
-          <div className="w-full max-w-[546px] flex flex-col gap-2">
-            <div className="relative w-full h-3 bg-gray-400 rounded-full overflow-hidden">
-              <div 
-                className="absolute top-0 left-0 h-full bg-gradient-to-r from-purple-600 to-purple-400 rounded-full transition-all duration-500"
-                style={{ width: '97%' }}
-              />
-            </div>
-            <p className="text-hero-text text-sm md:text-base font-semibold">
-              97% dos ingressos totais vendidos
-            </p>
-          </div>
           <div className="w-full flex justify-center">
             <h2
               className="
@@ -114,6 +102,19 @@ const HeroSection = () => {
                 GARANTIR INGRESSO | LOTE 0
               </span>
             </Button>
+          </div>
+
+          {/* Progress Bar - Lote Vendido */}
+          <div className="w-full max-w-[546px] flex flex-col gap-2">
+            <div className="relative w-full h-3 bg-gray-400 rounded-full overflow-hidden">
+              <div 
+                className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#CBA135] to-[#F5D78E] rounded-full transition-all duration-500"
+                style={{ width: '97%' }}
+              />
+            </div>
+            <p className="text-hero-text text-sm md:text-base font-semibold">
+              97% dos ingressos totais vendidos
+            </p>
           </div>
 
           <div className="flex flex-row flex-wrap gap-6 justify-center"></div>
