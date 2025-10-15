@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection";
+import VideoIntroSection from "@/components/VideoIntroSection";
 import EighthSection from "@/components/EighthSection";
 import SecondSection from "@/components/SecondSection";
 import ThirdSection from "@/components/ThirdSection";
@@ -18,6 +19,7 @@ const Index = () => {
   return (
     <>
       <HeroSection />
+      <VideoIntroSection />
       {/* <BenefitsSection /> */}
       <SecondSection />
       <ThirdSection />
