@@ -52,7 +52,7 @@ export default function SixthSection({
   }, [cashText]);
 
   return (
-    <section className="bg-hero-bg px-4 md:px-6 lg:px-[218px] font-geist">
+    <section id="price-section" className="bg-hero-bg px-4 md:px-6 lg:px-[218px] font-geist">
       <div className="max-w-[1060px] mx-auto py-8 md:py-12">
         {/* Título + badge centralizados */}
         <div className="text-center">

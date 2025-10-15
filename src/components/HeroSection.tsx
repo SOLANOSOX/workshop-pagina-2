@@ -1,12 +1,9 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import DiagnosticModal from "@/components/DiagnosticModal";
 import NewLogo2 from "@/assets/log.svg";
 import hero from "@/assets/2bew.png";
 import hero2 from "@/assets/2new2.png";
 
 const HeroSection = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       <section className="relative bg-hero-bg py-8 md:py-12 lg:py-[60px] px-4 md:px-6 lg:px-[418px] font-geist">
@@ -35,7 +32,7 @@ const HeroSection = () => {
               <img
                 src={NewLogo2}
                 alt="Legado Imobiliário Logo"
-                className="w-full max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] h-auto object-contain drop-shadow-lg"
+                className="w-full max-w-[300px] md:max-w-[800px] lg:max-w-[1000px] h-auto object-contain drop-shadow-lg"
               />
             </div>
 
@@ -50,7 +47,7 @@ const HeroSection = () => {
     text-hero-text
   "
                 >
-                  Transforme sua Imobiliária em uma Máquina de Vendas com IA{" "}
+                  2 dias intensivos. Vendas Recorrentes com Inteligência Artificial{" "}
                   <br />
                   <span className="text-hero-accent">
                     +600% de Faturamento em 6 Meses
@@ -58,13 +55,20 @@ const HeroSection = () => {
                 </h1>
               </div>
 
-              {/* Description */}
-              <div className="flex flex-col text-hero-text text-sm md:text-base font-medium leading-5 md:leading-6 gap-4 md:gap-6">
-                <p className="text-hero-text text-[15px] md:text-[20px] lg:text-[24px]">
-                  2 dias intensivos. Vendas Recorrentes com Inteligência Artificial
-                </p>
-              </div>
             </div>
+          </div>
+
+          {/* Progress Bar - Lote Vendido */}
+          <div className="w-full max-w-[546px] flex flex-col gap-2">
+            <div className="relative w-full h-3 bg-gray-400 rounded-full overflow-hidden">
+              <div 
+                className="absolute top-0 left-0 h-full bg-gradient-to-r from-purple-600 to-purple-400 rounded-full transition-all duration-500"
+                style={{ width: '97%' }}
+              />
+            </div>
+            <p className="text-hero-text text-sm md:text-base font-semibold">
+              97% dos ingressos totais vendidos
+            </p>
           </div>
           <div className="w-full flex justify-center">
             <h2
@@ -101,25 +105,20 @@ const HeroSection = () => {
       hover:from-[#FFD85D] hover:to-[#FFF3C0]
       hover:shadow-[0_0_20px_rgba(255,215,0,0.7)]
     "
-              onClick={() => setIsModalOpen(true)}
+              onClick={() => {
+                const priceSection = document.getElementById('price-section');
+                priceSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }}
             >
               <span className="block font-bold text-[18px] leading-none">
                 GARANTIR INGRESSO | LOTE 0
               </span>
-              {/* <span className="text-[1.30em] font-semibold leading-none -mt-1">
-                por apenas R$47
-              </span> */}
             </Button>
           </div>
 
           <div className="flex flex-row flex-wrap gap-6 justify-center"></div>
         </div>
       </section>
-
-      <DiagnosticModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
     </>
   );
 };

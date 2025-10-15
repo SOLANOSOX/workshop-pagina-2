@@ -1,10 +1,6 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import DiagnosticModal from "@/components/DiagnosticModal";
 
 const UrgencySection = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   return (
     <>
       <section className="bg-hero-text px-4 md:px-6 lg:px-[418px] font-geist py-12 md:py-16 lg:py-20">
@@ -47,7 +43,10 @@ const UrgencySection = () => {
       hover:from-[#FFD85D] hover:to-[#FFF3C0]
       hover:shadow-[0_0_20px_rgba(255,215,0,0.7)]
     "
-              onClick={() => setIsModalOpen(true)}
+              onClick={() => {
+                const priceSection = document.getElementById('price-section');
+                priceSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }}
             >
               <span className="block font-bold text-[18px] leading-none">
                 GARANTIR INGRESSO | LOTE 0
@@ -56,11 +55,6 @@ const UrgencySection = () => {
           </div>
         </div>
       </section>
-
-      <DiagnosticModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
     </>
   );
 };
