@@ -24,27 +24,19 @@ const PricingSection = () => {
                 <span className="text-xl font-bold text-accent">R$ 2.500</span>
               </div> */}
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-3 border-b border-hero-text/20 gap-1 sm:gap-0">
-                <span className="text-lg font-medium">
-                  Sistema de Atração de leads qualificados:
-                </span>
+                <span className="text-lg font-medium">Sistema de Atração de leads qualificados:</span>
                 <span className="text-xl font-bold text-accent">R$ 9.997</span>
               </div>
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-3 border-b border-hero-text/20 gap-1 sm:gap-0">
-                <span className="text-lg font-medium">
-                  Plano de Gestão Guiada de Equipe:
-                </span>
+                <span className="text-lg font-medium">Plano de Gestão Guiada de Equipe:</span>
                 <span className="text-xl font-bold text-accent">R$ 997</span>
               </div>
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-3 border-b border-hero-text/20 gap-1 sm:gap-0">
-                <span className="text-lg font-medium">
-                  Ferramentas de Automação que funcionam para o M.I.:
-                </span>
+                <span className="text-lg font-medium">Ferramentas de Automação que funcionam para o M.I.:</span>
                 <span className="text-xl font-bold text-accent">R$ 1.997</span>
               </div>
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-3 border-b border-hero-text/20 gap-1 sm:gap-0">
-                <span className="text-lg font-medium">
-                  Métricas e Controle:
-                </span>
+                <span className="text-lg font-medium">Métricas e Controle:</span>
                 <span className="text-xl font-bold text-accent">R$ 997</span>
               </div>
               {/* <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-3 border-b border-hero-text/20 gap-1 sm:gap-0">
@@ -55,9 +47,7 @@ const PricingSection = () => {
               </div> */}
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-4 bg-accent/20 rounded-xl px-6 mt-6 gap-2 sm:gap-0 text-center sm:text-left">
                 <span className="text-2xl font-bold">VALOR TOTAL:</span>
-                <span className="text-3xl font-black text-accent">
-                  R$ 13.988
-                </span>
+                <span className="text-3xl font-black text-accent">R$ 13.988</span>
               </div>
             </div>
           </div>
@@ -66,9 +56,7 @@ const PricingSection = () => {
           <div className="text-center mb-8">
             <h3 className="text-3xl md:text-4xl font-extrabold text-hero-text mb-6">
               OFERTA ESPECIAL PARA FECHAR 2025 NO AZUL {""}
-              <span className="text-3xl text-hero-text/80 line-through">
-                R$13.988
-              </span>
+              <span className="text-3xl text-hero-text/80 line-through">R$13.988</span>
             </h3>
             {/* <h3 className="text-3xl md:text-4xl font-extrabold text-hero-text mb-6">
               OFERTA ESPECIAL DE FECHAMENTO DE ANO
@@ -90,37 +78,25 @@ const PricingSection = () => {
               <div className="text-3xl sm:text-4xl md:text-6xl font-black text-accent-foreground mb-2 break-words">
                 Apenas R$ 47,00
               </div>
-              <div className="text-lg font-bold text-accent-foreground/80">
-                (Mais de 99% de desconto)
-              </div>
+              <div className="text-lg font-bold text-accent-foreground/80">(Mais de 90% de desconto)</div>
             </div>
           </div>
 
           {/* Bonus Section */}
           <div className="bg-hero-bg rounded-[25px] md:rounded-[50px] p-8 mb-8 shadow-sm">
-            <h4 className="text-2xl font-bold text-accent text-center mb-6">
-              BÔNUS EXCLUSIVOS INCLUSOS
-            </h4>
+            <h4 className="text-2xl font-bold text-accent text-center mb-6">BÔNUS EXCLUSIVOS INCLUSOS</h4>
 
             <div className="space-y-4 text-hero-text">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between py-3 gap-1 sm:gap-0">
-                <span className="text-lg">
-                  Scripts Pré-SOX - Pré-atendimento de alta conversão:
-                </span>
+                <span className="text-lg">Scripts Pré-SOX - Pré-atendimento de alta conversão:</span>
                 <span className="text-xl font-bold text-accent">(R$ 197)</span>
               </div>
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between py-3 gap-1 sm:gap-0">
-                <span className="text-lg">
-                  Modelo efetivo contrato de parceria:
-                </span>
-                <span className="text-xl font-bold text-accent">
-                  (R$ 1.000)
-                </span>
+                <span className="text-lg">Modelo efetivo contrato de parceria:</span>
+                <span className="text-xl font-bold text-accent">(R$ 1.000)</span>
               </div>
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between py-3 gap-1 sm:gap-0">
-                <span className="text-lg">
-                  Direcionamento de Criativos para Tráfego:
-                </span>
+                <span className="text-lg">Direcionamento de Criativos para Tráfego:</span>
                 <span className="text-xl font-bold text-accent">(R$ 497)</span>
               </div>
 
@@ -137,11 +113,8 @@ const PricingSection = () => {
               <div className="border-t border-hero-text/20 pt-4 mt-6">
                 <div className="flex justify-center items-center text-center">
                   <span className="text-xl font-bold">
-                    Pacote de bônus avaliado em{" "}
-                    <span className="text-2xl font-black text-accent">
-                      R$1.694
-                    </span>{" "}
-                    incluso gratuitamente.
+                    Pacote de bônus avaliado em <span className="text-2xl font-black text-accent">R$1.694</span> incluso
+                    gratuitamente.
                   </span>
                 </div>
               </div>
@@ -177,10 +150,7 @@ const PricingSection = () => {
         </div>
       </section>
 
-      <DiagnosticModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
+      <DiagnosticModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
 };

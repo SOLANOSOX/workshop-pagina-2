@@ -59,19 +59,15 @@ const HeroSection = () => {
     text-hero-text
   "
                 >
-                  Transforme sua Imobiliária em uma Máquina de Vendas com IA{" "}
-                  <br />
-                  <span className="text-hero-accent">
-                    +600% de Faturamento em 6 Meses
-                  </span>
+                  Transforme sua Imobiliária em uma Máquina de Vendas com IA <br />
+                  <span className="text-hero-accent">+600% de Faturamento em 6 Meses</span>
                 </h1>
               </div>
 
               {/* Description */}
               <div className="flex flex-col text-hero-text text-sm md:text-base font-medium leading-5 md:leading-6 gap-4 md:gap-6">
                 <p className="text-hero-text text-[16px] md:text-[20px] lg:text-[24px]">
-                  2 dias intensivos. VENDAS RECORRENTES COM INTELIGÊNCIA
-                  ARTIFICIAL
+                  2 dias intensivos. VENDAS RECORRENTES COM INTELIGÊNCIA ARTIFICIAL
                 </p>
               </div>
             </div>
@@ -85,7 +81,7 @@ const HeroSection = () => {
     w-full text-center md:text-left
   "
             >
-              DE R$ 997 POR R$ 47
+              DE R$ 497 POR R$ 47
             </h2>
           </div>
 
@@ -113,9 +109,7 @@ const HeroSection = () => {
     "
               onClick={() => setIsModalOpen(true)}
             >
-              <span className="block font-bold text-[18px] leading-none">
-                GARANTIR INGRESSO | LOTE 0
-              </span>
+              <span className="block font-bold text-[18px] leading-none">GARANTIR INGRESSO | LOTE 0</span>
               {/* <span className="text-[1.30em] font-semibold leading-none -mt-1">
                 por apenas R$47
               </span> */}
@@ -126,10 +120,7 @@ const HeroSection = () => {
         </div>
       </section>
 
-      <DiagnosticModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
+      <DiagnosticModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
 };
