@@ -20,25 +20,16 @@ const VideoIntroSection = () => {
                   <div className="w-14 h-4 bg-gray-900 rounded-full"></div>
                 </div>
 
-                {/* Screen Content - Video Placeholder */}
-                <div className="relative aspect-[9/19.5] bg-gradient-to-b from-gray-900 to-black">
-                  <div className="absolute inset-0 flex items-center justify-center pt-8">
-                    <div className="text-center">
-                      {/* Play Button */}
-                      <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center backdrop-blur-sm border border-primary/30 shadow-lg">
-                        <svg
-                          className="w-10 h-10 text-primary"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                        </svg>
-                      </div>
-                      <p className="text-muted-foreground text-xs md:text-sm px-4">
-                        Vídeo será adicionado aqui
-                      </p>
-                    </div>
-                  </div>
+                {/* Screen Content - YouTube Video */}
+                <div className="relative aspect-[9/19.5] bg-black">
+                  <iframe
+                    className="absolute inset-0 w-full h-full pt-7"
+                    src="https://www.youtube.com/embed/zEtEy67WlNY"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
                 </div>
               </div>
 
