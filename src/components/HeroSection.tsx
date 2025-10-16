@@ -99,14 +99,16 @@ const HeroSection = () => {
           </div>
 
           {/* Progress Bar - Lote Vendido */}
-          <div className="w-full max-w-[252px] mx-auto flex flex-col gap-2">
-            <div className="relative w-full h-3 bg-gray-400 rounded-full overflow-hidden">
-              <div
-                className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#CBA135] to-[#F5D78E] rounded-full transition-all duration-500"
-                style={{ width: "97%" }}
-              />
+          <div className="w-full flex justify-center md:justify-start">
+            <div className="w-full max-w-[252px] flex flex-col gap-2">
+              <div className="relative w-full h-3 bg-gray-400 rounded-full overflow-hidden">
+                <div
+                  className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#CBA135] to-[#F5D78E] rounded-full transition-all duration-500"
+                  style={{ width: "97%" }}
+                />
+              </div>
+              <p className="text-hero-text text-sm md:text-base font-semibold">97% dos ingressos totais vendidos</p>
             </div>
-            <p className="text-hero-text text-sm md:text-base font-semibold">97% dos ingressos totais vendidos</p>
           </div>
 
           <div className="flex flex-row flex-wrap gap-6 justify-center"></div>
