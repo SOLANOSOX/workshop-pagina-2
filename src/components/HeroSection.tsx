@@ -99,7 +99,7 @@ const HeroSection = () => {
           </div>
 
           {/* Progress Bar - Lote Vendido */}
-          <div className="w-full max-w-[546px] flex flex-col gap-2">
+          <div className="w-full max-w-[252px] flex flex-col gap-2">
             <div className="relative w-full h-3 bg-gray-400 rounded-full overflow-hidden">
               <div
                 className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#CBA135] to-[#F5D78E] rounded-full transition-all duration-500"
