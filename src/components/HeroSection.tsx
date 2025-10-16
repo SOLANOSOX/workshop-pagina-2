@@ -27,8 +27,8 @@ const HeroSection = () => {
 
         <div className="relative z-10 max-w-[1060px] mx-auto min-h-[500px] md:min-h-[600px] lg:h-[718px] flex flex-col items-start justify-center gap-6 md:gap-8">
           {/* Logo */}
-          <div className="w-full max-w-[546px] flex flex-col gap-6 md:gap-7">
-            <div className="flex flex-col items-center justify-center overflow-hidden">
+          <div className="w-full flex flex-col gap-6 md:gap-7 items-center md:items-start">
+            <div className="flex flex-col items-center justify-center overflow-hidden w-full">
               <img
                 src={NewLogo2}
                 alt="Legado Imobiliário Logo"
@@ -37,7 +37,7 @@ const HeroSection = () => {
             </div>
 
             {/* Main Content */}
-            <div className="flex flex-col gap-4 md:gap-6 text-center md:text-left">
+            <div className="flex flex-col gap-4 md:gap-6 text-center md:text-left w-full">
               {/* Main Title */}
               <div className="flex flex-col">
                 <h1
@@ -52,9 +52,8 @@ const HeroSection = () => {
                 </h1>
               </div>
             </div>
-          </div>
 
-          <div className="w-full flex justify-center">
+            {/* Price */}
             <h2
               className="
     text-hero-text
@@ -100,14 +99,14 @@ const HeroSection = () => {
 
           {/* Progress Bar - Lote Vendido */}
           <div className="w-full flex justify-center md:justify-start">
-            <div className="w-full max-w-[252px] flex flex-col gap-2">
+            <div className="w-full max-w-[360px] flex flex-col gap-2 items-center md:items-start">
               <div className="relative w-full h-3 bg-gray-400 rounded-full overflow-hidden">
                 <div
                   className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#CBA135] to-[#F5D78E] rounded-full transition-all duration-500"
                   style={{ width: "97%" }}
                 />
               </div>
-              <p className="text-hero-text text-sm md:text-base font-semibold">97% dos ingressos totais vendidos</p>
+              <p className="text-hero-text text-sm md:text-base font-semibold text-center md:text-left">97% dos ingressos totais vendidos</p>
             </div>
           </div>
 
