@@ -67,7 +67,7 @@ const HeroSection = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="w-full flex justify-center md:justify-start mb-6 -mt-1">
+          <div className="w-full flex justify-center md:justify-start mb-3 -mt-1">
             <Button
               variant="hero"
               size="hero"
@@ -99,7 +99,7 @@ const HeroSection = () => {
 
           {/* Progress Bar - Lote Vendido */}
           <div className="w-full flex justify-center md:justify-start">
-            <div className="w-full max-w-[360px] flex flex-col gap-2 items-center md:items-start">
+            <div className="w-full max-w-[252px] flex flex-col gap-2 items-center md:items-start">
               <div className="relative w-full h-3 bg-gray-400 rounded-full overflow-hidden">
                 <div
                   className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#CBA135] to-[#F5D78E] rounded-full transition-all duration-500"
