@@ -1,48 +1,46 @@
 import { Button } from "@/components/ui/button";
 import NewLogo2 from "@/assets/log.svg";
 import hero from "@/assets/2bew.png";
-import hero2 from "@/assets/2new2.png";
+import hero2 from "@/assets/hero-mobile.webp";
 
 const HeroSection = () => {
   return (
     <>
-      <section className="relative bg-hero-bg py-8 md:py-12 lg:py-[60px] px-4 md:px-6 lg:px-[418px] font-geist">
-        {/* md até xl-1 (768px até 1279px) */}
+      <section className="relative bg-hero-bg h-[100vh] py-8 md:py-12 lg:py-[60px] px-6 md:px-6 lg:px-8 font-geist">
+        {/* Background para todos os tamanhos */}
         <div
-          className="absolute inset-0 hidden md:block xl:hidden bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-right-top md:bg-right"
           style={{ backgroundImage: `url(${hero2})` }}
         ></div>
 
-        {/* xl até 2xl-1 (1280px até 1535px) */}
+        {/* 2xl pra cima usa hero */}
         <div
-          className="absolute inset-0 hidden md:block 2xl:hidden bg-cover bg-center"
-          style={{ backgroundImage: `url(${hero2})` }}
-        ></div>
-
-        {/* 2xl pra cima (>=1536px) */}
-        <div
-          className="absolute inset-0 hidden 2xl:block bg-cover bg-center"
+          className="absolute inset-0 hidden 2xl:block bg-cover bg-right-top md:bg-right"
           style={{ backgroundImage: `url(${hero})` }}
         ></div>
 
-        <div className="relative z-10 max-w-[1060px] mx-auto min-h-[500px] md:min-h-[600px] lg:h-[718px] flex flex-col items-start justify-center gap-6 md:gap-8">
+        {/* Overlay escuro à esquerda para destacar o texto e manter Adel visível à direita */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent md:from-black/80 md:via-black/30 md:to-transparent"></div>
+
+        <div className="relative z-10 max-w-7xl mx-auto h-full flex items-start pt-2 md:pt-12">
+          <div className="w-[540px] max-w-[540px] flex flex-col items-start justify-start gap-3 md:gap-4">
           {/* Logo */}
-          <div className="w-full max-w-[546px] flex flex-col gap-6 md:gap-7">
-            <div className="flex flex-col items-center justify-center overflow-hidden">
+          <div className="w-full max-w-[546px] flex flex-col gap-3 md:gap-4">
+            <div className="flex flex-col items-start justify-center overflow-hidden">
               <img
                 src={NewLogo2}
                 alt="Legado Imobiliário Logo"
-                className="w-full max-w-[300px] md:max-w-[800px] lg:max-w-[1000px] h-auto object-contain drop-shadow-lg"
+                className="w-full min-w-[220px] max-w-[350px] h-auto object-contain drop-shadow-lg"
               />
             </div>
 
             {/* Main Content */}
-            <div className="flex flex-col gap-4 md:gap-6 text-center md:text-left">
+            <div className="flex flex-col gap-2 md:gap-3 text-left">
               {/* Main Title */}
               <div className="flex flex-col">
                 <h1
                   className="
-    text-[25px] md:text-[36px] lg:text-[48px] 
+    text-[24px] md:text-[36px] lg:text-[48px] 
     leading-[34px] md:leading-[42px] lg:leading-[52px] 
     text-hero-text
   "
@@ -54,13 +52,13 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="w-full flex justify-center">
+          <div className="w-full flex justify-start">
             <h2
               className="
     text-hero-text
     text-[14px] md:text-[16px] lg:text-[18px]
     m-0 p-0 leading-none
-    w-full text-center md:text-left
+    text-left
   "
             >
               DE R$ 497 POR R$ 47
@@ -68,7 +66,7 @@ const HeroSection = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="w-full flex justify-center md:justify-start mb-6 -mt-1">
+          <div className="w-full flex justify-start mb-2 -mt-1">
             <Button
               variant="hero"
               size="hero"
@@ -94,12 +92,12 @@ const HeroSection = () => {
                 priceSection?.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
             >
-              <span className="block font-bold text-[18px] leading-none">GARANTIR INGRESSO | LOTE 0</span>
+              <span className="block font-bold text-[18px] leading-none">GARANTIR INGRESSO | LOTE 2</span>
             </Button>
           </div>
 
           {/* Progress Bar - Lote Vendido */}
-          <div className="w-full flex justify-center md:justify-start">
+          <div className="w-full flex justify-start">
             <div className="w-full max-w-[252px] flex flex-col gap-2">
               <div className="relative w-full h-3 bg-gray-400 rounded-full overflow-hidden">
                 <div
@@ -110,8 +108,7 @@ const HeroSection = () => {
               <p className="text-hero-text text-sm md:text-base font-semibold">97% dos ingressos totais vendidos</p>
             </div>
           </div>
-
-          <div className="flex flex-row flex-wrap gap-6 justify-center"></div>
+          </div>
         </div>
       </section>
     </>

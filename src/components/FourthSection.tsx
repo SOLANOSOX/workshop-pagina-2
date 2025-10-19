@@ -111,7 +111,10 @@ const FourthSection = () => {
                 hover:from-[#FFD85D] hover:to-[#FFF3C0]
                 hover:shadow-[0_0_20px_rgba(255,215,0,0.7)]
               "
-              onClick={() => setIsModalOpen(true)}
+              onClick={() => {
+                const priceSection = document.getElementById("price-section");
+                priceSection?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
             >
               Quero VENDER MAIS com IA
             </Button>

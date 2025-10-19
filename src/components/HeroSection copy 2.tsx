@@ -109,7 +109,7 @@ const HeroSection = () => {
     "
               onClick={() => setIsModalOpen(true)}
             >
-              <span className="block font-bold text-[18px] leading-none">GARANTIR INGRESSO | LOTE 0</span>
+              <span className="block font-bold text-[18px] leading-none">GARANTIR INGRESSO | LOTE 2</span>
               {/* <span className="text-[1.30em] font-semibold leading-none -mt-1">
                 por apenas R$47
               </span> */}
