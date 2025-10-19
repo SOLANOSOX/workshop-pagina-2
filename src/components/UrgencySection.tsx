@@ -49,7 +49,7 @@ const UrgencySection = () => {
               }}
             >
               <span className="block font-bold text-[18px] leading-none">
-                GARANTIR INGRESSO | LOTE 0
+                GARANTIR INGRESSO | LOTE 2
               </span>
             </Button>
           </div>

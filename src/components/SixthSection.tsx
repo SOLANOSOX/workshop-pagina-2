@@ -33,7 +33,7 @@ export default function SixthSection({
   priceTitle = " ou 5x de",
   bigPrice = "R$ 10,60",
   cashText = "ou R$ 47 à vista",
-  ctaText = "GARANTIR INGRESSO | LOTE 0",
+  ctaText = "GARANTIR INGRESSO | LOTE 2",
 }: {
   date?: string;
   hoursLabel?: string;

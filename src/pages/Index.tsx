@@ -22,12 +22,12 @@ const Index = () => {
       <VideoIntroSection />
       {/* <BenefitsSection /> */}
       <SecondSection />
-      <ThirdSection />
       <FourthSection />
       <ThreeAsSection />
       <BeforeSixSection />
       <SixthSection />
       <BeforeSix2 />
+      <ThirdSection />
       <SeventhSection />
       <EighthSection />
       <MentorsSection />

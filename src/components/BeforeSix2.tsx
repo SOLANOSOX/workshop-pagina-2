@@ -108,7 +108,7 @@ const BeforeSix2 = () => {
                          text-[clamp(13px,3.6vw,18px)]"
               style={{ textWrap: "balance" }}
             >
-              GARANTIR INGRESSO | LOTE 0 por apenas R$&nbsp;47
+              GARANTIR INGRESSO | LOTE 2 por apenas R$&nbsp;47
             </span>
           </Button>
         </div>
