@@ -81,7 +81,7 @@ const HeroSection = () => {
     w-full text-center md:text-left
   "
             >
-              DE R$ 497 POR R$ 47
+              DE R$ 497 POR R$ 97
             </h2>
           </div>
 
@@ -111,7 +111,7 @@ const HeroSection = () => {
             >
               <span className="block font-bold text-[18px] leading-none">GARANTIR INGRESSO | LOTE 2</span>
               {/* <span className="text-[1.30em] font-semibold leading-none -mt-1">
-                por apenas R$47
+                por apenas R$ 97
               </span> */}
             </Button>
           </div>

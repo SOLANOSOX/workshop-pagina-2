@@ -104,7 +104,7 @@ const MentorsSectionSol = () => {
               "
               onClick={() => setIsModalOpen(true)}
             >
-               GARANTIR INGRESSO | R$47
+               GARANTIR INGRESSO | R$ 97
             </Button>
           </div>
         </div>
