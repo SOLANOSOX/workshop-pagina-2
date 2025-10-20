@@ -76,7 +76,7 @@ const PricingSection = () => {
 
             <div className="bg-accent rounded-[25px] p-6 mb-6 shadow-sm">
               <div className="text-3xl sm:text-4xl md:text-6xl font-black text-accent-foreground mb-2 break-words">
-                Apenas R$ 47,00
+                Apenas R$ 97,00
               </div>
               <div className="text-lg font-bold text-accent-foreground/80">(Mais de 90% de desconto)</div>
             </div>
@@ -125,7 +125,7 @@ const PricingSection = () => {
           <div className="text-center">
             <div className="bg-accent rounded-[25px] p-6 mb-8 shadow-sm">
               <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-accent-foreground text-center break-words">
-                VOCÊ LEVA TUDO POR: R$ 47
+                VOCÊ LEVA TUDO POR: R$ 97
               </div>
             </div>
 
