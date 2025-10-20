@@ -76,7 +76,7 @@ const BeforeSix2 = () => {
               </h3>
 
               <p className="text-2xl md:text-3xl mb-6 md:mb-8">
-                5x de <span className="text-hero-accent">R$10,60</span> ou{" "}
+                5x de <span className="text-hero-accent">R$ 21,30</span> ou{" "}
                 <span className="text-hero-accent">R$ 97 à vista</span>
               </p>
             </div>
