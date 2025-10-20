@@ -128,7 +128,7 @@ const DiagnosticModal: React.FC<DiagnosticModalProps> = ({ isOpen, onClose }) =>
     setIsLoading(true);
 
     // 1. Construir URL do checkout com os dados do usuário
-    const checkoutUrl = new URL("https://pay.hub.la/RromdlJcDyVt11ii3CQB");
+    const checkoutUrl = new URL("https://pay.hub.la/CDPxuhw2s0rKWQY5MJ7v");
 
     // Configurado para enviar Nome, Email e Telefone
     checkoutUrl.searchParams.append("name", data.nomeCompleto);

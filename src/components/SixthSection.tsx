@@ -31,7 +31,7 @@ export default function SixthSection({
   hoursLabel = "16h de conteúdo",
   expLabel = "Experiência imersiva",
   priceTitle = " ou 5x de",
-  bigPrice = "R$ 10,60",
+  bigPrice = "R$ 21,30",
   cashText = "ou R$ 97 à vista",
   ctaText = "GARANTIR INGRESSO | LOTE 2",
 }: {

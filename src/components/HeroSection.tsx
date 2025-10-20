@@ -6,23 +6,37 @@ import heroMobile from "@/assets/hero-mobile.webp";
 const HeroSection = () => {
   return (
     <>
-      <section className="relative bg-hero-bg h-[100vh] py-8 md:py-12 lg:py-[60px] px-6 md:px-6 lg:px-8 font-geist">
+      <section className="relative bg-hero-bg h-[100vh] py-8 md:py-12 lg:py-[60px] px-6 md:px-6 lg:px-8 font-geist overflow-hidden">
         {/* Mobile background */}
         <div
-          className="absolute inset-0 block md:hidden bg-cover bg-right-top bg-fixed"
-          style={{ backgroundImage: `url(${heroMobile})` }}
+          className="absolute inset-0 block md:hidden bg-cover bg-center bg-no-repeat"
+          style={{ 
+            backgroundImage: `url(${heroMobile})`,
+            backgroundAttachment: 'scroll'
+          }}
         ></div>
+
+        {/* Mobile fallback image */}
+        <img 
+          src={heroMobile}
+          alt="Hero background mobile"
+          className="absolute inset-0 block md:hidden w-full h-full object-cover object-center"
+          style={{ zIndex: 1 }}
+        />
 
         {/* Tablet e Desktop background */}
         <div
-          className="absolute inset-0 hidden md:block bg-cover bg-right bg-fixed"
-          style={{ backgroundImage: `url(${heroDesktop})` }}
+          className="absolute inset-0 hidden md:block bg-cover bg-right bg-no-repeat"
+          style={{ 
+            backgroundImage: `url(${heroDesktop})`,
+            backgroundAttachment: 'scroll'
+          }}
         ></div>
 
         {/* Overlay escuro à esquerda para destacar o texto e manter Adel visível à direita */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent md:from-black/80 md:via-black/30 md:to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent md:from-black/80 md:via-black/30 md:to-transparent" style={{ zIndex: 2 }}></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto h-full flex items-start pt-2 md:pt-12">
+        <div className="relative z-10 max-w-7xl mx-auto h-full flex items-start pt-2 md:pt-12" style={{ zIndex: 10 }}>
           <div className="w-[540px] max-w-[540px] flex flex-col items-start justify-start gap-3 md:gap-4">
           {/* Logo */}
           <div className="w-full max-w-[546px] flex flex-col gap-3 md:gap-4">
@@ -68,7 +82,7 @@ const HeroSection = () => {
     text-left
   "
             >
-              DE R$ 497 POR R$ 97
+              DE R$ 697 POR R$ 97
             </h2>
           </div>
 
