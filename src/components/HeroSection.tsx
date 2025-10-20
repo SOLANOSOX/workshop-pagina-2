@@ -1,22 +1,22 @@
 import { Button } from "@/components/ui/button";
-import NewLogo2 from "@/assets/log.svg";
-import hero from "@/assets/2bew.png";
-import hero2 from "@/assets/hero-mobile.webp";
+import LogoWorkshop from "@/assets/logo-workshop.webp";
+import heroDesktop from "@/assets/hero-desktop.webp";
+import heroMobile from "@/assets/hero-mobile.webp";
 
 const HeroSection = () => {
   return (
     <>
       <section className="relative bg-hero-bg h-[100vh] py-8 md:py-12 lg:py-[60px] px-6 md:px-6 lg:px-8 font-geist">
-        {/* Background para todos os tamanhos */}
+        {/* Mobile background */}
         <div
-          className="absolute inset-0 bg-cover bg-right-top md:bg-right"
-          style={{ backgroundImage: `url(${hero2})` }}
+          className="absolute inset-0 block md:hidden bg-cover bg-right-top bg-fixed"
+          style={{ backgroundImage: `url(${heroMobile})` }}
         ></div>
 
-        {/* 2xl pra cima usa hero */}
+        {/* Tablet e Desktop background */}
         <div
-          className="absolute inset-0 hidden 2xl:block bg-cover bg-right-top md:bg-right"
-          style={{ backgroundImage: `url(${hero})` }}
+          className="absolute inset-0 hidden md:block bg-cover bg-right bg-fixed"
+          style={{ backgroundImage: `url(${heroDesktop})` }}
         ></div>
 
         {/* Overlay escuro à esquerda para destacar o texto e manter Adel visível à direita */}
@@ -28,10 +28,17 @@ const HeroSection = () => {
           <div className="w-full max-w-[546px] flex flex-col gap-3 md:gap-4">
             <div className="flex flex-col items-start justify-center overflow-hidden">
               <img
-                src={NewLogo2}
+                src={LogoWorkshop}
                 alt="Legado Imobiliário Logo"
-                className="w-full min-w-[220px] max-w-[350px] h-auto object-contain drop-shadow-lg"
+                className="w-full min-w-[180px] max-w-[280px] h-auto object-contain drop-shadow-lg"
               />
+            </div>
+
+            {/* Badge */}
+            <div className="px-3 md:px-4 py-1 md:py-2 border border-[#A7BBD2] rounded-[100px] flex w-fit">
+              <div className="text-hero-text text-xs md:text-sm font-semibold leading-tight">
+                25 e 26 de Outubro | Ao Vivo | Online
+              </div>
             </div>
 
             {/* Main Content */}
@@ -40,8 +47,8 @@ const HeroSection = () => {
               <div className="flex flex-col">
                 <h1
                   className="
-    text-[24px] md:text-[36px] lg:text-[48px] 
-    leading-[34px] md:leading-[42px] lg:leading-[52px] 
+    text-[22px] md:text-[36px] lg:text-[48px] 
+    leading-[30px] md:leading-[42px] lg:leading-[52px] 
     text-hero-text
   "
                 >
@@ -61,7 +68,7 @@ const HeroSection = () => {
     text-left
   "
             >
-              DE R$ 497 POR R$ 47
+              DE R$ 497 POR R$ 97
             </h2>
           </div>
 
@@ -99,13 +106,13 @@ const HeroSection = () => {
           {/* Progress Bar - Lote Vendido */}
           <div className="w-full flex justify-start">
             <div className="w-full max-w-[252px] flex flex-col gap-2">
-              <div className="relative w-full h-3 bg-gray-400 rounded-full overflow-hidden">
+              <div className="relative w-full h-2 bg-gray-400 rounded-full overflow-hidden">
                 <div
                   className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#CBA135] to-[#F5D78E] rounded-full transition-all duration-500"
                   style={{ width: "97%" }}
                 />
               </div>
-              <p className="text-hero-text text-sm md:text-base font-semibold">97% dos ingressos totais vendidos</p>
+              <p className="text-hero-text text-sm md:text-base font-semibold whitespace-nowrap">97% dos ingressos totais vendidos</p>
             </div>
           </div>
           </div>

@@ -32,7 +32,7 @@ export default function SixthSection({
   expLabel = "Experiência imersiva",
   priceTitle = " ou 5x de",
   bigPrice = "R$ 10,60",
-  cashText = "ou R$ 47 à vista",
+  cashText = "ou R$ 97 à vista",
   ctaText = "GARANTIR INGRESSO | LOTE 2",
 }: {
   date?: string;
@@ -45,10 +45,10 @@ export default function SixthSection({
 }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Pega "R$ 47" do cashText para ficar GIGANTE
+  // Pega "R$ 97" do cashText para ficar GIGANTE
   const cashNumber = useMemo(() => {
     const m = cashText.match(/R\$\s?[\d.,]+/);
-    return m ? m[0] : "R$ 47";
+    return m ? m[0] : "R$ 97";
   }, [cashText]);
 
   return (
@@ -86,7 +86,7 @@ export default function SixthSection({
 
               <hr className="w-full border-[#0E141B]/15 my-3 md:my-4" />
 
-              {/* PREÇO – R$ 47 grande; abaixo parcelado pequeno */}
+              {/* PREÇO – R$ 97 grande; abaixo parcelado pequeno */}
               <div>
                 <p className="font-black leading-[1.05] text-[48px] md:text-[64px]">{cashNumber}</p>
                 <p className="mt-1 text-[15px] md:text-[17px] font-semibold">

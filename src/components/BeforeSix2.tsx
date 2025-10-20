@@ -77,7 +77,7 @@ const BeforeSix2 = () => {
 
               <p className="text-2xl md:text-3xl mb-6 md:mb-8">
                 5x de <span className="text-hero-accent">R$10,60</span> ou{" "}
-                <span className="text-hero-accent">R$47 à vista</span>
+                <span className="text-hero-accent">R$ 97 à vista</span>
               </p>
             </div>
           </div>
@@ -108,7 +108,7 @@ const BeforeSix2 = () => {
                          text-[clamp(13px,3.6vw,18px)]"
               style={{ textWrap: "balance" }}
             >
-              GARANTIR INGRESSO | LOTE 2 por apenas R$&nbsp;47
+              GARANTIR INGRESSO | LOTE 2 por apenas R$ 97
             </span>
           </Button>
         </div>
